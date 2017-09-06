@@ -6,10 +6,9 @@ FROM osixia/alpine-light-baseimage:0.1.4
 ARG KEEPALIVED_VERSION=1.3.6
 
 # Download, build and install Keepalived
-RUN cp /etc/apk/repositories /etc/apk/repositories.bak\
-    && echo "http://mirrors.aliyun.com/alpine/v3.4/main/" > /etc/apk/repositories
-    &&
-       apk --no-cache add \
+RUN cp /etc/apk/repositories /etc/apk/repositories.bak \
+    && echo "http://mirrors.aliyun.com/alpine/v3.4/main/" > /etc/apk/repositories \
+    && apk --no-cache add \
        curl \
        gcc \
        ipset \
