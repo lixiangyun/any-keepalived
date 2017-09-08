@@ -33,6 +33,6 @@ $ docker run \
   --cap-add=NET_ADMIN \
   --net=host \
   --detach \
-  registry.cn-hangzhou.aliyuncs.com/anoyi/keepalived \
+  registry.cn-hangzhou.aliyuncs.com/anoy/keepalived \
   --loglevel debug
 ```
